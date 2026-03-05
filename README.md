@@ -1,7 +1,8 @@
 # Chem-O-Taxis: Simulating Self-Generated Gradient Chemotaxis
-
+Code for the paper "Macrophages Self-Generate And Refine Chemotactic Gradients During Migration Towards Complement C5a"
+Abhimanyu Kiran, Peter A. Thomason, David M. Versluis, Peggy I. Paschke, Hannah Donnelly, Luke Tweedy, Sergio Lilla, Isabel Bravo-Ferrer, Amy Shergold, Ryan Devlin, Ed W. Roberts, Robert H. Insall.
+Code by David M. Versluis
 A hybrid agent-based simulation of macrophage chemotaxis in self-generated or imposed gradients of complement C5a, modelling cells migrating across the bridge of an Insall chamber.
-
 
 ## Overview
 
@@ -52,12 +53,10 @@ Install the Python dependencies into a virtual environment:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install numpy numba matplotlib pyarrow pandas
+pip install numpy numba matplotlib pyarrow
 ```
 
 ## Running the Simulation
-
-
 The `run_experiments.sh` script launches all conditions used in the paper (3 replicates each, run in parallel):
 
 ```bash
